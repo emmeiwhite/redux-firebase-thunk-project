@@ -1,0 +1,8 @@
+.navbar-collapse .nav-item a{
+    color:#fff;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.navbar-collapse .nav{
+    align-items: center;
+}
