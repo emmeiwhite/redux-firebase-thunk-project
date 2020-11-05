@@ -7,15 +7,15 @@ const SignInLinks = ()=>{
     return(
         <React.Fragment>
             <NavItem>
-                <NavLink to={"#"}>New Project</NavLink>
+                <NavLink to="create">New Project</NavLink>
             </NavItem>
             
             <NavItem>
-                <NavLink to={"#"}>Logout</NavLink>
+                <NavLink to="/">Logout</NavLink>
             </NavItem>
             
             <NavItem>
-                <NavLink to={"#"} className="logged-in-user-image">
+                <NavLink to="/" className="logged-in-user-image">
                     NN
                 </NavLink>
             </NavItem>

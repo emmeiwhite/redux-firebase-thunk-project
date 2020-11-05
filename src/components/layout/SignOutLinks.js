@@ -6,10 +6,10 @@ const SignOutLinks = ()=>{
     return(
         <React.Fragment>
                 <NavItem>
-                  <NavLink to={"#"}>Signup</NavLink>
+                  <NavLink to="signup">Signup</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to={"#"}>Login</NavLink>
+                  <NavLink to="signin">Signin</NavLink>
                 </NavItem>
         </React.Fragment>
     )
