@@ -1,0 +1,10 @@
+.sign-in-btn{
+    background: rgb(187, 0, 0);
+    padding: 0.5rem 1rem;
+    outline:none;
+    border:none;
+}
+
+.sign-in-btn:hover{
+    background: #000;
+}

@@ -4,7 +4,7 @@ import Notifications from './Notifications'
 
 const Dashboard = ()=>{
     return(
-        <main className="container mt-5">
+        <main>
             <div className="row dashboard-wrapper">
                 <div className="col-md-6">
                     <ProjectList/>
@@ -14,7 +14,6 @@ const Dashboard = ()=>{
                 </div>
             </div>
         </main>
-        
     )
 }
 export default Dashboard;
