@@ -11,6 +11,7 @@ import SignInLinks from './SignInLinks';
 import SignOutLinks from './SignOutLinks';
 
 import './NavbarMain.css';
+import { Link } from 'react-router-dom';
 
 const NavbarMain = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,10 @@ const NavbarMain = (props) => {
     <div>
       <header className="bg-dark">
           <Navbar color="dark" className="container" dark expand="sm">
-            <NavbarBrand href="/">Emmeisoft</NavbarBrand>
+            <span className="navbar-brand">
+              <Link to="/">Emmeisoft</Link>
+            </span>
+
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto">

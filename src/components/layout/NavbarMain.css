@@ -1,3 +1,15 @@
+.navbar-brand a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.navbar-brand a:hover{
+    color:#95e8f3;
+    text-decoration: none;
+}
 .navbar-collapse .nav-item a{
     color:#fff;
     margin-left: 1rem;

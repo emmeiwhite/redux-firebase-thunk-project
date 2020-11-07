@@ -14,6 +14,7 @@ function App() {
     <NavbarMain/>
       <div className="container mt-5">
         <Switch>
+            <Route exact path="/" component={Dashboard}/>
             <Route exact path="/dashboard" component={Dashboard}/>
             <Route exact path="/project/:id" component={ProjectDetails}/>
             <Route exact path="/signin" component={Signin}/>
