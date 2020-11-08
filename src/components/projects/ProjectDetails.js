@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle, CardText, CardHeader } from 'reactstrap';
+import { Card, CardTitle, CardText } from 'reactstrap';
 
 const ProjectDetails = ({match})=>{
     return(
