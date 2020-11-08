@@ -1,12 +1,12 @@
 import React from 'react'
 import { Card, CardTitle, CardText, CardHeader } from 'reactstrap';
 
-const ProjectSummary = ()=>{
+const ProjectSummary = ({project})=>{
     return(
-        <Card body className="text-left" >
-            <CardHeader>Header</CardHeader>
-            <CardTitle>Project Title</CardTitle>
-            <CardText>Project by Emmeisoft</CardText>
+        <Card body className="text-left" key={project.id}>
+            <CardHeader>PROJECT HEADER</CardHeader>
+            <CardTitle>{project.title}</CardTitle>
+            <CardText>{project.content}</CardText>
             <CardText>Dated : 30-January-2020</CardText>
         </Card>
     )
