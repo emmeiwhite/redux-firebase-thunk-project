@@ -1,23 +1,14 @@
-import React from 'react'
-import {connect} from 'react-redux'
+import React from "react";
+import ProjectSummary from "./ProjectSummary";
 
-import ProjectSummary from './ProjectSummary'
+const ProjectList = ({ projects }) => {
+  const projectList =
+    projects &&
+    projects.map((project) => {
+      return <ProjectSummary project={project} />;
+    });
 
-const ProjectList = ({projects})=>{
-    const projectList = projects.map(project=>{
-        return <ProjectSummary project={project} />
-    })
-    return(
-        <div className="Project-list-wrapper">
-           {projectList}
-        </div>
-        
-    )
-}
+  return <div className="Project-list-wrapper">{projectList}</div>;
+};
 
-const mapStateToProps = (state) => {
-    return {
-        projects: state.projects.projects
-    }
-}
-export default connect(mapStateToProps)(ProjectList);
+export default ProjectList;

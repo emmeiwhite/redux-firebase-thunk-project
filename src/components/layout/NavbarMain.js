@@ -31,6 +31,7 @@ const NavbarMain = (props) => {
               <Nav className="ml-auto">
                 <SignOutLinks/>
                 <SignInLinks/>
+                <Link to={`/posts`} style={{textDecoration:'none',color:'#fff',marginLeft:'1rem'}}>Posts</Link>
               </Nav>
             </Collapse>
           </Navbar>
