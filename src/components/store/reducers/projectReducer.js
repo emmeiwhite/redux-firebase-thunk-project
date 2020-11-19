@@ -22,7 +22,18 @@ const initialState = {
 };
 
 const projectReducer = (state = initialState, action) => {
-  return state;
+  console.log(action);
+  switch (action.type) {
+    case "CREATE_PROJECT":
+      const project = {
+        ...action.project,
+        id: Math.random(),
+      };
+      const updatedState = [...state.projects, project];
+      console.log(updatedState);
+    default:
+      return state;
+  }
 };
 
 export default projectReducer;

@@ -14,6 +14,8 @@ class CreateProject extends Component {
 
     // Dispatching an action after the form is submitted
     this.props.createProject(this.state);
+
+    e.target.reset();
   };
 
   handleChange = (e) => {
@@ -46,7 +48,7 @@ class CreateProject extends Component {
             type="textarea"
             name="content"
             id="content"
-            onChange={this.state.content}
+            onChange={this.handleChange}
             required
             placeholder="Project Content"
             value={this.state.content}
